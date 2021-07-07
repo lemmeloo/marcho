@@ -3,10 +3,17 @@ body {
   font-size: 16px;
   line-height: 1.625;
   @extend %quicksand-500;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.main {
+  flex: 1;
 }
