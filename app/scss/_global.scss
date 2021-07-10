@@ -17,3 +17,28 @@ body {
 .main {
   flex: 1;
 }
+
+.btn {
+  height: 50px;
+  display: inline-block;
+  padding: 0 30px;
+  cursor: pointer;
+  border: none;
+  line-height: 50px;
+  background-color: $accent;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  @extend %roboto-400;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.title {
+  font-size: 48px;
+  line-height: normal;
+  @extend %roboto-700;
+  color: $title;
+}
