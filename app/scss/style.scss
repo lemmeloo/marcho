@@ -308,9 +308,10 @@
   }
   &__items {
     display: grid;
-    grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     
     min-height: 635px;
   }
@@ -361,6 +362,50 @@
       color: $accent;
       border-bottom: 1px solid currentColor;
     }
+  }
+}
+
+
+// VIDEO-FASHION ======================================================================
+
+.video-fashion {
+  background-color: $bg;
+  background-image: url(../images/video_bg.svg);
+  background-size: contain;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__popup {
+    background-image: url(../images/video_fashion_bg.jpg);
+    background-repeat: no-repeat;
+    max-width: 535px;
+    width: 100%;
+    display: flex;
+    margin-right: 65px;
+  }
+  &__link {
+    margin: auto;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  &__content {
+    max-width: 570px;
+    margin-top: 75px;
+  }
+  &__suptitle {
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.18;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    margin-bottom: 60px;
   }
 }
 
